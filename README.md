@@ -8,15 +8,15 @@
 >
 > 用 AI 重新定义投资研究的深度与效率。
 
-**AI Berkshire** 是一套同时兼容 Claude Code 与 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
+**AI Berkshire** 是一套同时兼容 Claude Code、Codex 与 opencode 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
 
-一个人 + Claude Code / Codex = 一个投研团队。
+一个人 + Claude Code / Codex / opencode = 一个投研团队。
 
 > 📮 **仓库是全量框架，公众号是精选。** 真正值得深研的公司，加上报告之外我自己的判断与取舍，都在微信公众号「**复利炼丹炉**」——[扫码关注 ↓](#精选研究首发于公众号)
 
 <!-- REPORTS-BANNER:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2346 份报告 · 110 家公司 · 23 个专题，按公司与专题分组，更新至 2026-09-12。
+> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2430 份报告 · 117 家公司 · 23 个专题，按公司与专题分组，更新至 2026-09-24。
 
 <!-- REPORTS-BANNER:END -->
 
@@ -246,7 +246,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 ### 1. 安装 AI 客户端
 
-本仓库保留同一套 canonical workflow，并分别提供 Claude Code commands 与 Codex skills。按你使用的客户端安装即可。
+本仓库保留同一套 canonical workflow，并分别提供 Claude Code commands、Codex skills 与 opencode commands/skills。按你使用的客户端安装即可。
 
 Claude Code 用户：
 
@@ -273,6 +273,24 @@ codex --version
 Windows 用户可使用官方 PowerShell 安装命令：`powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`。
 
 如果 `codex --version` 能正常输出版本号，就可以继续安装本项目的 Codex skills。
+
+opencode 用户：
+
+```bash
+# 安装脚本
+curl -fsSL https://opencode.ai/install | bash
+
+# 或使用 npm
+npm install -g opencode-ai
+
+# 或使用 Homebrew
+brew install anomalyco/tap/opencode
+
+# 验证安装
+opencode --version
+```
+
+Windows 用户可使用官方安装命令：`choco install opencode` 或 `scoop install opencode`（推荐在 WSL 中运行）。
 
 #### 减少授权确认
 
@@ -333,7 +351,26 @@ REM 可选：安装 Codex slash prompts
 .\scripts\install-codex-prompts.bat
 ```
 
-仓库同时维护三套入口：`skills/*.md` 是 Claude Code command 源文件；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层。
+opencode 用户安装（macOS / Linux）：
+
+```bash
+# 克隆仓库
+git clone https://github.com/xbtlin/ai-berkshire.git
+
+# 生成并安装 opencode commands 与 skills 到 ~/.config/opencode
+cd ai-berkshire
+./scripts/install-opencode.sh
+```
+
+opencode 用户安装（Windows PowerShell / Command Prompt）：
+
+```bat
+git clone https://github.com/xbtlin/ai-berkshire.git
+cd ai-berkshire
+.\scripts\install-opencode.bat
+```
+
+仓库同时维护四套入口：`skills/*.md` 是 Claude Code command 源文件（canonical）；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层；`.opencode/commands/*.md` 与 `.opencode/skills/*/SKILL.md` 是 opencode 的 slash command 与 agent skill，由 `scripts/sync-opencode.py` 从 `skills/*.md` 生成。opencode 会直接读取仓库内的 `.opencode/`，在项目目录中无需安装即可使用。
 
 ### 3. 使用
 
@@ -386,6 +423,17 @@ REM 可选：安装 Codex slash prompts
 ```text
 /prompts:investment-research 腾讯
 ```
+
+在 opencode 中，直接在项目目录运行 `opencode` 后即可使用同名 slash command：
+
+```text
+/investment-research 腾讯
+/earnings-review PDD 2025年报
+/industry-funnel AI算力
+/thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
+```
+
+也可以在对话中直接描述任务，opencode 会按需加载对应的 agent skill（`.opencode/skills/`），例如「用 investment-research 研究腾讯」。
 
 ---
 
@@ -657,18 +705,18 @@ REM 可选：安装 Codex slash prompts
 
 <!-- REPORTS-INDEX:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-**📊 [全部研究索引 →](reports/README.md)** ｜ 2346 份报告 · 110 家公司 · 23 个专题 · 更新至 2026-09-12
+**📊 [全部研究索引 →](reports/README.md)** ｜ 2430 份报告 · 117 家公司 · 23 个专题 · 更新至 2026-09-24
 
 最近更新：
 
 | 日期 | 报告 | 归属 |
 |------|------|------|
+| 2026-09-24 | [高通（QCOM）：AI Agent 进入每个人的个人设备，它会受益吗？](reports/高通/高通-端侧AI-Agent受益分析-20260924.md) | 高通 |
+| 2026-09-23 | [换仓决策研究：开仓 WM/MCD/ORCL 三选一，减仓 NVO/SPGI/SOFI 三选一](reports/换仓决策-WM-MCD-ORCL-对比-NVO-SPGI-SOFI-20260923.md) | 综合与横评 |
+| 2026-09-23 | [McDonald's (MCD) 投研团队四角色综合研究报告](reports/MCD/MCD-investment-team-20260923.md) | MCD |
 | 2026-09-12 | [早期年度财务补录（用于重建长历史估值序列）](reports/持仓估值分位与未来盈利-20260912/早期年度财务补录.md) | 持仓估值分位与未来盈利 |
 | 2026-09-12 | [十家中概都便宜，只有两家不在历史低位](reports/持仓估值分位与未来盈利-20260912/公众号-中概十公司估值分位与未来盈利-20260912.md) | 持仓估值分位与未来盈利 |
 | 2026-09-12 | [1.9亿次请求要的不是答案，是思路：拆Anthropic蒸馏报告](reports/AI产业研究/公众号-Anthropic蒸馏报告-七家中国实验室与1.9亿次请求-20260912.md) | AI产业研究 |
-| 2026-09-07 | [数据核查与适用边界](reports/跨市场确定性筛选-20260907/audit-notes.md) | 跨市场确定性筛选 |
-| 2026-09-07 | [跨市场优质股票筛选研究报告](reports/跨市场确定性-funnel-20260907.md) | 综合与横评 |
-| 2026-09-07 | [贵州茅台护城河、文化、需求与十年利润研究报告](reports/茅台/贵州茅台护城河文化需求与十年利润研究报告-20260907.md) | 茅台 |
 
 <!-- REPORTS-INDEX:END -->
 

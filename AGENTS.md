@@ -1,24 +1,36 @@
-# AI Berkshire Codex Guide
+# AI Berkshire Agent Guide
 
 This repository contains investment research workflows, reports, and shared
-validation tools. Keep compatibility with both Claude Code and Codex users.
+validation tools. Keep compatibility with Claude Code, Codex, and opencode
+users.
 
 ## Project Layout
 
-- `skills/*.md`: Claude Code slash-command source files.
+- `skills/*.md`: Claude Code slash-command source files. This is the canonical
+  workflow source for every client.
 - `codex-skills/*/SKILL.md`: Codex skill packages. Most are generated from
   `skills/*.md`; Codex-only hand-written packages are allowed when clearly
   marked and no same-named `skills/*.md` source exists.
 - `codex-prompts/*.md`: generated Codex custom prompts for slash-command
   style entry points. These are a compatibility layer; skills remain preferred.
-- `tools/*.py`: shared financial validation and data tools used by both systems.
+- `.opencode/commands/*.md`: generated opencode slash commands (`/<name>`),
+  adapted from `skills/*.md`.
+- `.opencode/skills/*/SKILL.md`: generated opencode agent skills, adapted from
+  `skills/*.md`.
+- `opencode.json`: opencode project config. It loads `CLAUDE.md` as an extra
+  instruction file alongside the auto-loaded `AGENTS.md`.
+- `tools/*.py`: shared financial validation and data tools used by all systems.
 - `reports/`: research outputs. Do not rewrite unrelated reports while changing
   tooling or skills.
 - `scripts/sync-codex-skills.py`: regenerates Codex skills from `skills/*.md`.
+- `scripts/sync-opencode.py`: regenerates opencode commands and skills from
+  `skills/*.md`.
 - `scripts/install-codex-skills.sh` / `scripts/install-codex-skills.bat`:
   installs Codex skills locally.
 - `scripts/install-codex-prompts.sh` / `scripts/install-codex-prompts.bat`:
   installs generated Codex slash prompts locally.
+- `scripts/install-opencode.sh` / `scripts/install-opencode.bat`:
+  installs generated opencode commands and skills locally.
 - `scripts/install-claude-commands.sh` / `scripts/install-claude-commands.bat`:
   installs Claude Code commands locally.
 
@@ -27,17 +39,20 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
 - Treat `skills/*.md` as the canonical workflow source.
 - After changing any file in `skills/`, run:
   `python3 scripts/sync-codex-skills.py`
+  and:
+  `python3 scripts/sync-opencode.py`
 - If slash prompt compatibility is needed, also run:
   `python3 scripts/sync-codex-prompts.py`
-- Do not manually edit generated `codex-skills/*/SKILL.md` unless also updating
-  the corresponding source in `skills/`.
+- Do not manually edit generated `codex-skills/*/SKILL.md`,
+  `.opencode/commands/*.md`, or `.opencode/skills/*/SKILL.md` unless also
+  updating the corresponding source in `skills/`.
 - For Codex-only hand-written packages under `codex-skills/`, keep them clearly
   marked as Codex-only and do not create a same-named `skills/*.md` file unless
   intentionally adopting the workflow for Claude Code too.
 - Keep tool paths compatible with the documented checkout path:
   `~/ai-berkshire/tools/...`
-- Keep `CLAUDE.md` for Claude Code behavior and this `AGENTS.md` for Codex
-  behavior.
+- Keep `CLAUDE.md` for Claude Code behavior, this `AGENTS.md` for Codex and
+  opencode behavior, and `opencode.json` for opencode project config.
 
 ## Research Quality Rules
 
@@ -67,3 +82,6 @@ validation tools. Keep compatibility with both Claude Code and Codex users.
   `python3 scripts/sync-codex-skills.py --check`
   and, when slash prompts are relevant:
   `python3 scripts/sync-codex-prompts.py --check`
+- To verify generated opencode artifacts are current without rewriting files,
+  run:
+  `python3 scripts/sync-opencode.py --check`
