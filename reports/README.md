@@ -3,7 +3,7 @@
 > 本文件由 `tools/reports_index.py` 自动生成，请勿手工编辑。
 > 新增报告后运行 `python3 tools/reports_index.py` 重新生成。
 
-**2430 份报告** · **117 家公司** · **23 个专题** · 最近更新 2026-09-24
+**2432 份报告** · **118 家公司** · **23 个专题** · 最近更新 2026-10-06
 
 [最近更新](#最近更新) · [按公司](#按公司) · [专题研究](#专题研究) · [大师研究](#大师研究) · [筛选池](#筛选池)
 
@@ -13,6 +13,8 @@
 
 | 日期 | 报告 | 归属 | 类型 |
 |------|------|------|------|
+| 2026-10-06 | [AKAM（Akamai 阿卡迈）近三年财报会议复盘：管理层"言出必行"吗？](AKAM/AKAM-management-earnings-track-record-20261006.md) | AKAM | 财报 |
+| 2026-10-06 | [AI算力四选一：AKAM / AMT / ORCL / QCOM 深度对比与建仓建议](AI算力四选一-AKAM-AMT-ORCL-QCOM-20261006.md) | 综合与横评 | 研究 |
 | 2026-09-24 | [高通（QCOM）：AI Agent 进入每个人的个人设备，它会受益吗？](高通/高通-端侧AI-Agent受益分析-20260924.md) | 高通 | 研究 |
 | 2026-09-23 | [换仓决策研究：开仓 WM/MCD/ORCL 三选一，减仓 NVO/SPGI/SOFI 三选一](换仓决策-WM-MCD-ORCL-对比-NVO-SPGI-SOFI-20260923.md) | 综合与横评 | 估值仓位 |
 | 2026-09-23 | [McDonald's (MCD) 投研团队四角色综合研究报告](MCD/MCD-investment-team-20260923.md) | MCD | 研究 |
@@ -51,8 +53,6 @@
 | 2026-09-06 | [七家公司：五年股东回报、确定性与资金配置](七公司五年回报与资金配置-20260906/五年回报与资金配置报告-20260906.md) | 七公司五年回报与资金配置 | 研究 |
 | 2026-09-06 | [Validation report](RSI-survey-20260906/research/validation-report.md) | RSI-survey | 研究 |
 | 2026-09-06 | [Verified source register](RSI-survey-20260906/research/source_register.md) | RSI-survey | 研究 |
-| 2026-09-06 | [Search method record](RSI-survey-20260906/research/search-log.md) | RSI-survey | 研究 |
-| 2026-09-06 | [人工智能递归自我改进：机制、证据与评估的批判性综述](RSI-survey-20260906/manuscript-zh.md) | RSI-survey | 研究 |
 
 ---
 
@@ -1850,6 +1850,13 @@
 </details>
 
 <details>
+<summary><b>AKAM</b> · 1 份 · 最近 2026-10-06</summary>
+
+- `2026-10-06` [AKAM（Akamai 阿卡迈）近三年财报会议复盘：管理层"言出必行"吗？](AKAM/AKAM-management-earnings-track-record-20261006.md) — 财报
+
+</details>
+
+<details>
 <summary><b>BYD</b> · 1 份 · 最近 2026-06-24</summary>
 
 - `2026-06-24` [比亚迪（BYD）投资研究报告](BYD/BYD-research-20260624.md) — 研究
@@ -2176,8 +2183,9 @@
 ## 专题研究
 
 <details>
-<summary><b>综合与横评</b> · 97 份 · 最近 2026-09-24</summary>
+<summary><b>综合与横评</b> · 98 份 · 最近 2026-10-06</summary>
 
+- `2026-10-06` [AI算力四选一：AKAM / AMT / ORCL / QCOM 深度对比与建仓建议](AI算力四选一-AKAM-AMT-ORCL-QCOM-20261006.md) — 研究
 - `2026-09-24` [巴菲特价值投资买入前 Checklist：BWXT / AVGO / QCOM / ORCL](多公司对比-checklist-20260924.md) — 底稿
 - `2026-09-23` [换仓决策研究：开仓 WM/MCD/ORCL 三选一，减仓 NVO/SPGI/SOFI 三选一](换仓决策-WM-MCD-ORCL-对比-NVO-SPGI-SOFI-20260923.md) — 估值仓位
 - `2026-09-06` [六家公司研究与持仓判断](六公司研究汇总-20260906.md) — 研究

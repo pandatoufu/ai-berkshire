@@ -16,7 +16,7 @@
 
 <!-- REPORTS-BANNER:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2430 份报告 · 117 家公司 · 23 个专题，按公司与专题分组，更新至 2026-09-24。
+> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2432 份报告 · 118 家公司 · 23 个专题，按公司与专题分组，更新至 2026-10-06。
 
 <!-- REPORTS-BANNER:END -->
 
@@ -705,18 +705,18 @@ cd ai-berkshire
 
 <!-- REPORTS-INDEX:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-**📊 [全部研究索引 →](reports/README.md)** ｜ 2430 份报告 · 117 家公司 · 23 个专题 · 更新至 2026-09-24
+**📊 [全部研究索引 →](reports/README.md)** ｜ 2432 份报告 · 118 家公司 · 23 个专题 · 更新至 2026-10-06
 
 最近更新：
 
 | 日期 | 报告 | 归属 |
 |------|------|------|
+| 2026-10-06 | [AKAM（Akamai 阿卡迈）近三年财报会议复盘：管理层"言出必行"吗？](reports/AKAM/AKAM-management-earnings-track-record-20261006.md) | AKAM |
+| 2026-10-06 | [AI算力四选一：AKAM / AMT / ORCL / QCOM 深度对比与建仓建议](reports/AI算力四选一-AKAM-AMT-ORCL-QCOM-20261006.md) | 综合与横评 |
 | 2026-09-24 | [高通（QCOM）：AI Agent 进入每个人的个人设备，它会受益吗？](reports/高通/高通-端侧AI-Agent受益分析-20260924.md) | 高通 |
 | 2026-09-23 | [换仓决策研究：开仓 WM/MCD/ORCL 三选一，减仓 NVO/SPGI/SOFI 三选一](reports/换仓决策-WM-MCD-ORCL-对比-NVO-SPGI-SOFI-20260923.md) | 综合与横评 |
 | 2026-09-23 | [McDonald's (MCD) 投研团队四角色综合研究报告](reports/MCD/MCD-investment-team-20260923.md) | MCD |
 | 2026-09-12 | [早期年度财务补录（用于重建长历史估值序列）](reports/持仓估值分位与未来盈利-20260912/早期年度财务补录.md) | 持仓估值分位与未来盈利 |
-| 2026-09-12 | [十家中概都便宜，只有两家不在历史低位](reports/持仓估值分位与未来盈利-20260912/公众号-中概十公司估值分位与未来盈利-20260912.md) | 持仓估值分位与未来盈利 |
-| 2026-09-12 | [1.9亿次请求要的不是答案，是思路：拆Anthropic蒸馏报告](reports/AI产业研究/公众号-Anthropic蒸馏报告-七家中国实验室与1.9亿次请求-20260912.md) | AI产业研究 |
 
 <!-- REPORTS-INDEX:END -->
 

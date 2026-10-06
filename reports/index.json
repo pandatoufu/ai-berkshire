@@ -1,6 +1,28 @@
 {
-  "count": 2430,
+  "count": 2432,
   "reports": [
+    {
+      "title": "AKAM（Akamai 阿卡迈）近三年财报会议复盘：管理层\"言出必行\"吗？",
+      "path": "reports/AKAM/AKAM-management-earnings-track-record-20261006.md",
+      "bucket": "公司",
+      "group": "AKAM",
+      "series": "",
+      "type": "财报",
+      "date": "2026-10-06",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "AI算力四选一：AKAM / AMT / ORCL / QCOM 深度对比与建仓建议",
+      "path": "reports/AI算力四选一-AKAM-AMT-ORCL-QCOM-20261006.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "研究",
+      "date": "2026-10-06",
+      "date_source": "文件名",
+      "ticker": ""
+    },
     {
       "title": "高通（QCOM）：AI Agent 进入每个人的个人设备，它会受益吗？",
       "path": "reports/高通/高通-端侧AI-Agent受益分析-20260924.md",
