@@ -16,7 +16,7 @@
 
 <!-- REPORTS-BANNER:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2432 份报告 · 118 家公司 · 23 个专题，按公司与专题分组，更新至 2026-10-06。
+> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2433 份报告 · 118 家公司 · 23 个专题，按公司与专题分组，更新至 2026-10-06。
 
 <!-- REPORTS-BANNER:END -->
 
@@ -370,7 +370,23 @@ cd ai-berkshire
 .\scripts\install-opencode.bat
 ```
 
-仓库同时维护四套入口：`skills/*.md` 是 Claude Code command 源文件（canonical）；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层；`.opencode/commands/*.md` 与 `.opencode/skills/*/SKILL.md` 是 opencode 的 slash command 与 agent skill，由 `scripts/sync-opencode.py` 从 `skills/*.md` 生成。opencode 会直接读取仓库内的 `.opencode/`，在项目目录中无需安装即可使用。
+Antigravity AI Agent 用户（agy CLI / Antigravity IDE / Antigravity 2.0）：
+
+Antigravity 会自动发现项目根目录的通用规则 `AGENTS.md` 与工作区 `.agents/` 目录（包含 22 个专属 Skills 与投研规则），**在项目目录中开箱即用，无需额外安装**。如果希望将技能安装到系统全局以在其他任意目录中使用：
+
+macOS / Linux：
+```bash
+cd ai-berkshire
+./scripts/install-antigravity.sh
+```
+
+Windows：
+```bat
+cd ai-berkshire
+.\scripts\install-antigravity.bat
+```
+
+仓库同时维护多套入口：`skills/*.md` 是 Claude Code command 源文件（canonical）；`.agents/skills/*/SKILL.md` 是 Antigravity AI Agent 技能包，由 `scripts/sync-antigravity.py` 从 `skills/*.md` 生成；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层；`.opencode/commands/*.md` 与 `.opencode/skills/*/SKILL.md` 是 opencode 的 slash command 与 agent skill，由 `scripts/sync-opencode.py` 生成。
 
 ### 3. 使用
 
@@ -434,6 +450,17 @@ cd ai-berkshire
 ```
 
 也可以在对话中直接描述任务，opencode 会按需加载对应的 agent skill（`.opencode/skills/`），例如「用 investment-research 研究腾讯」。
+
+在 **Antigravity（agy CLI / Antigravity IDE / Antigravity 2.0）** 中，打开项目即可直接对话，Antigravity 会通过渐进式披露自动识别并激活 `.agents/skills/` 中的对应技能，同时受 `AGENTS.md` 与 `.agents/rules/` 规范约束：
+
+```text
+使用 investment-research 深入研究腾讯
+使用 earnings-review 分析 PDD 2025年报
+使用 industry-funnel 筛选 AI算力行业优质标的
+使用 bottleneck-hunter 扫描 AI基础设施产业链瓶颈
+```
+
+Antigravity 还会自动调用 `invoke_subagent` 调遣 `research` 子智能体进行多源检索与四大师分工，并在估值计算时严格调用项目内的 `tools/financial_rigor.py` 脚本保证数值精确。
 
 ---
 
@@ -705,16 +732,16 @@ cd ai-berkshire
 
 <!-- REPORTS-INDEX:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-**📊 [全部研究索引 →](reports/README.md)** ｜ 2432 份报告 · 118 家公司 · 23 个专题 · 更新至 2026-10-06
+**📊 [全部研究索引 →](reports/README.md)** ｜ 2433 份报告 · 118 家公司 · 23 个专题 · 更新至 2026-10-06
 
 最近更新：
 
 | 日期 | 报告 | 归属 |
 |------|------|------|
+| 2026-10-06 | [Cerebras Systems（CBRS）研究报告](reports/Cerebras研究报告-20261006.md) | 综合与横评 |
 | 2026-10-06 | [AKAM（Akamai 阿卡迈）近三年财报会议复盘：管理层"言出必行"吗？](reports/AKAM/AKAM-management-earnings-track-record-20261006.md) | AKAM |
 | 2026-10-06 | [AI算力四选一：AKAM / AMT / ORCL / QCOM 深度对比与建仓建议](reports/AI算力四选一-AKAM-AMT-ORCL-QCOM-20261006.md) | 综合与横评 |
 | 2026-09-24 | [高通（QCOM）：AI Agent 进入每个人的个人设备，它会受益吗？](reports/高通/高通-端侧AI-Agent受益分析-20260924.md) | 高通 |
-| 2026-09-23 | [换仓决策研究：开仓 WM/MCD/ORCL 三选一，减仓 NVO/SPGI/SOFI 三选一](reports/换仓决策-WM-MCD-ORCL-对比-NVO-SPGI-SOFI-20260923.md) | 综合与横评 |
 | 2026-09-23 | [McDonald's (MCD) 投研团队四角色综合研究报告](reports/MCD/MCD-investment-team-20260923.md) | MCD |
 | 2026-09-12 | [早期年度财务补录（用于重建长历史估值序列）](reports/持仓估值分位与未来盈利-20260912/早期年度财务补录.md) | 持仓估值分位与未来盈利 |
 
