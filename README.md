@@ -16,7 +16,7 @@
 
 <!-- REPORTS-BANNER:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2433 份报告 · 118 家公司 · 23 个专题，按公司与专题分组，更新至 2026-10-06。
+> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2439 份报告 · 118 家公司 · 23 个专题，按公司与专题分组，更新至 2026-10-12。
 
 <!-- REPORTS-BANNER:END -->
 
@@ -732,18 +732,16 @@ Antigravity 还会自动调用 `invoke_subagent` 调遣 `research` 子智能体�
 
 <!-- REPORTS-INDEX:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-**📊 [全部研究索引 →](reports/README.md)** ｜ 2433 份报告 · 118 家公司 · 23 个专题 · 更新至 2026-10-06
+**📊 [全部研究索引 →](reports/README.md)** ｜ 2439 份报告 · 118 家公司 · 23 个专题 · 更新至 2026-10-12
 
 最近更新：
 
 | 日期 | 报告 | 归属 |
 |------|------|------|
+| 2026-10-12 | [多少钱值得买，什么信号必须卖](reports/高通/《看懂高通》-20261012/05-多少钱值得买，什么信号必须卖.md) | 高通 |
+| 2026-10-12 | [用巴菲特方式拆高通的财报与管理层](reports/高通/《看懂高通》-20261012/04-用巴菲特方式拆高通的财报与管理层.md) | 高通 |
 | 2026-10-06 | [Cerebras Systems（CBRS）研究报告](reports/Cerebras研究报告-20261006.md) | 综合与横评 |
 | 2026-10-06 | [AKAM（Akamai 阿卡迈）近三年财报会议复盘：管理层"言出必行"吗？](reports/AKAM/AKAM-management-earnings-track-record-20261006.md) | AKAM |
-| 2026-10-06 | [AI算力四选一：AKAM / AMT / ORCL / QCOM 深度对比与建仓建议](reports/AI算力四选一-AKAM-AMT-ORCL-QCOM-20261006.md) | 综合与横评 |
-| 2026-09-24 | [高通（QCOM）：AI Agent 进入每个人的个人设备，它会受益吗？](reports/高通/高通-端侧AI-Agent受益分析-20260924.md) | 高通 |
-| 2026-09-23 | [McDonald's (MCD) 投研团队四角色综合研究报告](reports/MCD/MCD-investment-team-20260923.md) | MCD |
-| 2026-09-12 | [早期年度财务补录（用于重建长历史估值序列）](reports/持仓估值分位与未来盈利-20260912/早期年度财务补录.md) | 持仓估值分位与未来盈利 |
 
 <!-- REPORTS-INDEX:END -->
 
