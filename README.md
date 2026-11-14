@@ -8,19 +8,23 @@
 >
 > 用 AI 重新定义投资研究的深度与效率。
 
-**AI Berkshire** 是一套同时兼容 Claude Code、Codex 与 opencode 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
+**AI Berkshire** 是一套同时兼容 Claude Code 与 Codex 的投资研究 Skill 合集，将巴菲特、芒格、段永平、李录四位价值投资大师的方法论系统化、结构化，通过 AI Agent 实现专业级投资研究。
 
-一个人 + Claude Code / Codex / opencode = 一个投研团队。
+一个人 + Claude Code / Codex = 一个投研团队。
 
 > 📮 **仓库是全量框架，公众号是精选。** 真正值得深研的公司，加上报告之外我自己的判断与取舍，都在微信公众号「**复利炼丹炉**」——[扫码关注 ↓](#精选研究首发于公众号)
 
+> 🎓 **互动财报课程：[复利学堂 · 看懂一家公司](apps/financial-academy/)**。12 章、72 个知识点、48 道章节题与 24 道结业题，含互动实验、错题复习及出师门槛；源码、题库和本地运行说明均已入库。
+
 <!-- REPORTS-BANNER:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2443 份报告 · 118 家公司 · 23 个专题，按公司与专题分组，更新至 2026-11-08。
+> 📖 **想读报告，用 [阅读站](https://xbtlin.github.io/ai-berkshire/)**：成品报告按公司、专题、时间整理，电脑和手机都好读，可搜索、记住阅读进度。
+>
+> 📊 全部 2353 份报告（含底稿）· 123 家公司 · 29 个专题，GitHub 上的完整目录见 [研究报告索引](reports/README.md)，更新至 2026-11-12。
 
 <!-- REPORTS-BANNER:END -->
 
-[实盘业绩](#real-track-record) · [为什么不能直接问AI](#为什么不能直接问-ai) · [Skills 一览](#skills-一览20个) · [快速开始](#快速开始) · [实战报告](#实战研究报告) · [研究索引](reports/README.md) · [设计理念](#设计理念) · [公众号](#精选研究首发于公众号)
+[📖 阅读站](https://xbtlin.github.io/ai-berkshire/) · [实盘业绩](#real-track-record) · [为什么不能直接问AI](#为什么不能直接问-ai) · [Skills 一览](#skills-一览22个) · [快速开始](#快速开始) · [实战报告](#实战研究报告) · [研究索引](reports/README.md) · [设计理念](#设计理念) · [公众号](#精选研究首发于公众号)
 
 ---
 
@@ -61,6 +65,10 @@
 <img src="assets/wechat-qr.png" width="160" alt="微信公众号：复利炼丹炉" />
 
 **复利炼丹炉** —— 用 AI 炼投研这颗丹。
+
+> ⚠️ **官方渠道只有三个**：本仓库、[阅读站](https://xbtlin.github.io/ai-berkshire/)、公众号「复利炼丹炉」。**不收费、不荐股、不带单、不建投资群，也不以任何形式收款**。ai-berkshire.com、aiberkshire.com 等域名由他人注册，与本项目无关；凡以 AI Berkshire 名义拉群、收费、推荐个股的都不是本人。
+
+已发表文章按公司归档在 [投资炼丹/](投资炼丹/README.md)，每篇附对应的研究原稿。
 
 ---
 
@@ -172,19 +180,20 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 
 **三层设计哲学**：
-- **Skill 层**：把"你要做什么"抽象成 20 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
+- **Skill 层**：把"你要做什么"抽象成 22 个明确入口——深度研究、财报分析、行业筛选、持仓管理、思维工具，按场景选用
 - **Agent 层**：团队型 skill（如 `/investment-team`、`/earnings-team`）由 Team Lead 并行调度 4 个大师视角 Agent——各自独立搜索、独立判断、互相挑战，最后综合研判；轻量 skill 不经过这一层，直连工具快进快出
 - **工具层**：精确计算、实时检索、报告抽检——保证每份报告的数据严谨性可验证
 
 ---
 
-## Skills 一览（20个）
+## Skills 一览（22个）
 
 ### 🔬 深度研究类
 
 | Skill | 用途 | 适合场景 |
 |-------|------|---------|
 | [`/investment-research`](skills/investment-research.md) | 四大师综合深度分析 | 对一家上市公司进行全方位投资研究 |
+| [`/company-valuation`](skills/company-valuation.md) | 公司内在价值与估值复核 | 腾讯等重点公司及美股七姐妹：现金流、SOTP、反向估值与可复算验证 |
 | [`/investment-team`](skills/investment-team.md) | 多Agent并行投研团队 | 4个Agent并行研究，最快速、最全面 |
 | [`/management-deep-dive`](skills/management-deep-dive.md) | 管理层纵深研究 | "买股票就是买人"——当管理层是核心变量时深挖 |
 | [`/private-company-research`](skills/private-company-research.md) | 未上市公司深度研究 | 研究蚂蚁、SpaceX等信息稀缺的未上市公司 |
@@ -228,7 +237,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 ### 🔗 搭配 Claude Code 内置的 /deep-research
 
-除以上 20 个 skill 外，Claude Code 自带一个 `/deep-research` 深度研究编排器（内置于客户端，不由本仓库分发，安装 Claude Code 即可使用）。它的流程是：把问题拆成 5 个检索角度并行搜索 → 抓取来源、提取可证伪论断 → 每条论断由 3 个独立 Agent 对抗验证（3 票中 2 票证伪才剔除）→ 按置信度合成带引用来源的报告。核心价值是每条结论都被人试图推翻过，而不是搜到什么写什么。
+除以上 22 个 skill 外，Claude Code 自带一个 `/deep-research` 深度研究编排器（内置于客户端，不由本仓库分发，安装 Claude Code 即可使用）。它的流程是：把问题拆成 5 个检索角度并行搜索 → 抓取来源、提取可证伪论断 → 每条论断由 3 个独立 Agent 对抗验证（3 票中 2 票证伪才剔除）→ 按置信度合成带引用来源的报告。核心价值是每条结论都被人试图推翻过，而不是搜到什么写什么。
 
 适合在运行本仓库的个股/行业 skill 之前，先对一个关键事实判断做独立核查。实战示例：[存储涨价周期研究](reports/存储行业/存储涨价周期研究-还能维持几年高价-20260727.md)（106 个检索/验证 Agent，23 条论断三票制交叉验证）、[diffusion LLM 技术路线综述](reports/大模型技术/diffusion-LLM技术路线综述-与AR对比-20260706.md)（25 条论断验证，22 条确认、3 条被证伪）。
 
@@ -246,7 +255,7 @@ AI Berkshire 确保：**同样的输入 → 结构一致、深度一致的输出
 
 ### 1. 安装 AI 客户端
 
-本仓库保留同一套 canonical workflow，并分别提供 Claude Code commands、Codex skills 与 opencode commands/skills。按你使用的客户端安装即可。
+本仓库保留同一套 canonical workflow，并分别提供 Claude Code commands 与 Codex skills。按你使用的客户端安装即可。
 
 Claude Code 用户：
 
@@ -273,24 +282,6 @@ codex --version
 Windows 用户可使用官方 PowerShell 安装命令：`powershell -ExecutionPolicy ByPass -c "irm https://chatgpt.com/codex/install.ps1 | iex"`。
 
 如果 `codex --version` 能正常输出版本号，就可以继续安装本项目的 Codex skills。
-
-opencode 用户：
-
-```bash
-# 安装脚本
-curl -fsSL https://opencode.ai/install | bash
-
-# 或使用 npm
-npm install -g opencode-ai
-
-# 或使用 Homebrew
-brew install anomalyco/tap/opencode
-
-# 验证安装
-opencode --version
-```
-
-Windows 用户可使用官方安装命令：`choco install opencode` 或 `scoop install opencode`（推荐在 WSL 中运行）。
 
 #### 减少授权确认
 
@@ -351,42 +342,7 @@ REM 可选：安装 Codex slash prompts
 .\scripts\install-codex-prompts.bat
 ```
 
-opencode 用户安装（macOS / Linux）：
-
-```bash
-# 克隆仓库
-git clone https://github.com/xbtlin/ai-berkshire.git
-
-# 生成并安装 opencode commands 与 skills 到 ~/.config/opencode
-cd ai-berkshire
-./scripts/install-opencode.sh
-```
-
-opencode 用户安装（Windows PowerShell / Command Prompt）：
-
-```bat
-git clone https://github.com/xbtlin/ai-berkshire.git
-cd ai-berkshire
-.\scripts\install-opencode.bat
-```
-
-Antigravity AI Agent 用户（agy CLI / Antigravity IDE / Antigravity 2.0）：
-
-Antigravity 会自动发现项目根目录的通用规则 `AGENTS.md` 与工作区 `.agents/` 目录（包含 22 个专属 Skills 与投研规则），**在项目目录中开箱即用，无需额外安装**。如果希望将技能安装到系统全局以在其他任意目录中使用：
-
-macOS / Linux：
-```bash
-cd ai-berkshire
-./scripts/install-antigravity.sh
-```
-
-Windows：
-```bat
-cd ai-berkshire
-.\scripts\install-antigravity.bat
-```
-
-仓库同时维护多套入口：`skills/*.md` 是 Claude Code command 源文件（canonical）；`.agents/skills/*/SKILL.md` 是 Antigravity AI Agent 技能包，由 `scripts/sync-antigravity.py` 从 `skills/*.md` 生成；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层；`.opencode/commands/*.md` 与 `.opencode/skills/*/SKILL.md` 是 opencode 的 slash command 与 agent skill，由 `scripts/sync-opencode.py` 生成。
+仓库同时维护三套入口：`skills/*.md` 是 Claude Code command 源文件；`codex-skills/*/SKILL.md` 是 Codex skill 包，由 `scripts/sync-codex-skills.py` 从 `skills/*.md` 生成；`codex-prompts/*.md` 是可选的 Codex slash prompt 兼容层。
 
 ### 3. 使用
 
@@ -439,28 +395,6 @@ cd ai-berkshire
 ```text
 /prompts:investment-research 腾讯
 ```
-
-在 opencode 中，直接在项目目录运行 `opencode` 后即可使用同名 slash command：
-
-```text
-/investment-research 腾讯
-/earnings-review PDD 2025年报
-/industry-funnel AI算力
-/thesis-drift 拼多多 reports/拼多多-thesis-2025Q4.md reports/拼多多-thesis-2026Q1.md
-```
-
-也可以在对话中直接描述任务，opencode 会按需加载对应的 agent skill（`.opencode/skills/`），例如「用 investment-research 研究腾讯」。
-
-在 **Antigravity（agy CLI / Antigravity IDE / Antigravity 2.0）** 中，打开项目即可直接对话，Antigravity 会通过渐进式披露自动识别并激活 `.agents/skills/` 中的对应技能，同时受 `AGENTS.md` 与 `.agents/rules/` 规范约束：
-
-```text
-使用 investment-research 深入研究腾讯
-使用 earnings-review 分析 PDD 2025年报
-使用 industry-funnel 筛选 AI算力行业优质标的
-使用 bottleneck-hunter 扫描 AI基础设施产业链瓶颈
-```
-
-Antigravity 还会自动调用 `invoke_subagent` 调遣 `research` 子智能体进行多源检索与四大师分工，并在估值计算时严格调用项目内的 `tools/financial_rigor.py` 脚本保证数值精确。
 
 ---
 
@@ -732,17 +666,18 @@ Antigravity 还会自动调用 `invoke_subagent` 调遣 `research` 子智能体�
 
 <!-- REPORTS-INDEX:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-**📊 [全部研究索引 →](reports/README.md)** ｜ 2443 份报告 · 118 家公司 · 23 个专题 · 更新至 2026-11-08
+**📊 [全部研究索引 →](reports/README.md)** ｜ 2353 份报告 · 123 家公司 · 29 个专题 · 更新至 2026-11-12
 
 最近更新：
 
 | 日期 | 报告 | 归属 |
 |------|------|------|
+| 2026-11-12 | [英伟达：黄仁勋事件、换帅风险与买入价格](reports/英伟达/英伟达黄仁勋事件研究报告-20261112.md) | 英伟达 |
 | 2026-11-08 | [Cloudflare (NET)、Vistra (VST)、Veeva (VEEV) 最新财报精读、基本面横评与"民主党上台 AI 放缓"多情景估值报告](reports/NET-VST-VEEV-财报精读与AI放缓情景估值-20261108.md) | 综合与横评 |
 | 2026-11-06 | [Vistra Corp.（VST）2026Q3 财报精读与多情景估值报告](reports/Vistra-earnings-2026Q3.md) | 综合与横评 |
 | 2026-11-05 | [Cloudflare（NET）2026Q3 财报精读与多情景估值报告](reports/Cloudflare/Cloudflare-earnings-2026Q3.md) | Cloudflare |
-| 2026-10-12 | [多少钱值得买，什么信号必须卖](reports/高通/《看懂高通》-20261012/05-多少钱值得买，什么信号必须卖.md) | 高通 |
-| 2026-10-12 | [用巴菲特方式拆高通的财报与管理层](reports/高通/《看懂高通》-20261012/04-用巴菲特方式拆高通的财报与管理层.md) | 高通 |
+| 2026-11-04 | [现代牙科（03600.HK）研究报告](reports/现代牙科/现代牙科研究报告-20261104.md) | 现代牙科 |
+| 2026-11-04 | [京东健康投资研究：药品供应链值多少钱，服务增长有多少来自京东集团](reports/京东健康/京东健康研究报告-20261104.md) | 京东健康 |
 
 <!-- REPORTS-INDEX:END -->
 
@@ -774,6 +709,8 @@ Antigravity 还会自动调用 `invoke_subagent` 调遣 `research` 子智能体�
 - 你得到的不是四份报告的拼接，而是四种思维方式的碰撞
 
 ### 金融严谨性工具 (`tools/financial_rigor.py`)
+
+专门估值可调用 `/company-valuation 腾讯`（Codex 使用 `$company-valuation 腾讯`）。[公司方法指南](tools/valuation/company-playbooks.md) 覆盖 14 家公司；[估值引擎](tools/valuation/model-schema.md) 使用 Decimal 计算 DCF、股权桥、敏感性与反向估值。[验证记录](tools/valuation/validation.md) 区分算术测试、行为复核和仍需当期验证的经济假设。
 
 | 功能 | 命令 | 解决的问题 |
 |------|------|-----------|
@@ -822,3 +759,4 @@ MIT License
     <img alt="Star History Chart" src="assets/star-history.svg">
   </picture>
 </a>
+
