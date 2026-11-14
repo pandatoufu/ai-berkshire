@@ -3,7 +3,7 @@
 > 本文件由 `tools/reports_index.py` 自动生成，请勿手工编辑。
 > 新增报告后运行 `python3 tools/reports_index.py` 重新生成。
 
-**2439 份报告** · **118 家公司** · **23 个专题** · 最近更新 2026-10-12
+**2443 份报告** · **118 家公司** · **23 个专题** · 最近更新 2026-11-08
 
 [最近更新](#最近更新) · [按公司](#按公司) · [专题研究](#专题研究) · [大师研究](#大师研究) · [筛选池](#筛选池)
 
@@ -13,14 +13,15 @@
 
 | 日期 | 报告 | 归属 | 类型 |
 |------|------|------|------|
+| 2026-11-08 | [Cloudflare (NET)、Vistra (VST)、Veeva (VEEV) 最新财报精读、基本面横评与"民主党上台 AI 放缓"多情景估值报告](NET-VST-VEEV-财报精读与AI放缓情景估值-20261108.md) | 综合与横评 | 财报 |
+| 2026-11-06 | [Vistra Corp.（VST）2026Q3 财报精读与多情景估值报告](Vistra-earnings-2026Q3.md) | 综合与横评 | 财报 |
+| 2026-11-05 | [Cloudflare（NET）2026Q3 财报精读与多情景估值报告](Cloudflare/Cloudflare-earnings-2026Q3.md) | Cloudflare | 财报 |
 | 2026-10-12 | [多少钱值得买，什么信号必须卖](高通/《看懂高通》-20261012/05-多少钱值得买，什么信号必须卖.md) | 高通 | 深度系列 |
 | 2026-10-12 | [用巴菲特方式拆高通的财报与管理层](高通/《看懂高通》-20261012/04-用巴菲特方式拆高通的财报与管理层.md) | 高通 | 财报 |
 | 2026-10-12 | [苹果离开之后，高通靠什么再造一个帝国？](高通/《看懂高通》-20261012/03-苹果离开之后，高通靠什么再造一个帝国？.md) | 高通 | 深度系列 |
 | 2026-10-06 | [Cerebras Systems（CBRS）研究报告](Cerebras研究报告-20261006.md) | 综合与横评 | 研究 |
 | 2026-10-06 | [AKAM（Akamai 阿卡迈）近三年财报会议复盘：管理层"言出必行"吗？](AKAM/AKAM-management-earnings-track-record-20261006.md) | AKAM | 财报 |
-| 2026-10-06 | [AI算力四选一：AKAM / AMT / ORCL / QCOM 深度对比与建仓建议](AI算力四选一-AKAM-AMT-ORCL-QCOM-20261006.md) | 综合与横评 | 研究 |
 | 2026-09-24 | [高通（QCOM）：AI Agent 进入每个人的个人设备，它会受益吗？](高通/高通-端侧AI-Agent受益分析-20260924.md) | 高通 | 研究 |
-| 2026-09-23 | [换仓决策研究：开仓 WM/MCD/ORCL 三选一，减仓 NVO/SPGI/SOFI 三选一](换仓决策-WM-MCD-ORCL-对比-NVO-SPGI-SOFI-20260923.md) | 综合与横评 | 估值仓位 |
 | 2026-09-23 | [McDonald's (MCD) 投研团队四角色综合研究报告](MCD/MCD-investment-team-20260923.md) | MCD | 研究 |
 | 2026-09-12 | [早期年度财务补录（用于重建长历史估值序列）](持仓估值分位与未来盈利-20260912/早期年度财务补录.md) | 持仓估值分位与未来盈利 | 估值仓位 |
 | 2026-09-12 | [十家中概都便宜，只有两家不在历史低位](持仓估值分位与未来盈利-20260912/公众号-中概十公司估值分位与未来盈利-20260912.md) | 持仓估值分位与未来盈利 | 公众号 |
@@ -52,7 +53,6 @@
 | 2026-09-06 | [本次来源访问与边界](七公司商业质量与十年利润-20260906/泡泡MiniMax证据/来源登记.md) | 七公司商业质量与十年利润 | 研究 |
 | 2026-09-06 | [七家公司商业质量与十年利润对比研究报告](七公司商业质量与十年利润-20260906/七公司对比研究报告-20260906.md) | 七公司商业质量与十年利润 | 横评对比 |
 | 2026-09-06 | [本轮实时核验记录](七公司五年回报与资金配置-20260906/腾讯拼多多证据/sources.md) | 七公司五年回报与资金配置 | 研究 |
-| 2026-09-06 | [本轮来源与复用边界](七公司五年回报与资金配置-20260906/泡泡MiniMax五年证据/来源登记.md) | 七公司五年回报与资金配置 | 研究 |
 
 ---
 
@@ -1812,6 +1812,14 @@
 </details>
 
 <details>
+<summary><b>Cloudflare</b> · 2 份 · 最近 2026-11-05</summary>
+
+- `2026-11-05` [Cloudflare（NET）2026Q3 财报精读与多情景估值报告](Cloudflare/Cloudflare-earnings-2026Q3.md) — 财报
+- `2026-08-06` [Cloudflare（NET）2026Q2 财报精读](Cloudflare/Cloudflare-earnings-2026Q2.md) — 财报
+
+</details>
+
+<details>
 <summary><b>Prosus</b> · 2 份 · 最近 2026-08-17</summary>
 
 - `2026-08-17` [Prosus N.V.（AMS:PRX）投资研究报告](Prosus/Prosus-investment-research-20260817.md) — 研究
@@ -1840,6 +1848,14 @@
 
 - `2026-07-02` [特斯拉（Tesla, TSLA）投资研究报告](Tesla/特斯拉投资研究报告-20260702.md) — 研究
 - `2026-06-24` [特斯拉（TSLA）投资研究报告](Tesla/Tesla-research-20260624.md) — 研究
+
+</details>
+
+<details>
+<summary><b>Veeva</b> · 2 份 · 最近 2026-08-09</summary>
+
+- `2026-08-09` [Veeva Systems (VEEV) 投资研究报告](Veeva/Veeva投资研究报告-20260809.md) — 研究
+- `2026-07-31` [Veeva Systems（VEEV）2026Q2 财报与 11月投资者日（8-K）精读及多情景估值报告](Veeva/Veeva-earnings-2026Q2-InvestorDay.md) — 财报
 
 </details>
 
@@ -1877,13 +1893,6 @@
 <summary><b>CMOC</b> · 1 份 · 最近 2026-06-23</summary>
 
 - `2026-06-23` [洛阳钼业（CMOC）投资研究报告](CMOC/CMOC-research-20260623.md) — 研究
-
-</details>
-
-<details>
-<summary><b>Cloudflare</b> · 1 份 · 最近 2026-08-06</summary>
-
-- `2026-08-06` [Cloudflare（NET）2026Q2 财报精读](Cloudflare/Cloudflare-earnings-2026Q2.md) — 财报
 
 </details>
 
@@ -1940,13 +1949,6 @@
 <summary><b>RKLB</b> · 1 份 · 最近 2026-06-24</summary>
 
 - `2026-06-24` [Rocket Lab USA (RKLB) 投资研究报告](RKLB/RKLB-investment-research.md) — 研究
-
-</details>
-
-<details>
-<summary><b>Veeva</b> · 1 份 · 最近 2026-08-09</summary>
-
-- `2026-08-09` [Veeva Systems (VEEV) 投资研究报告](Veeva/Veeva投资研究报告-20260809.md) — 研究
 
 </details>
 
@@ -2193,8 +2195,10 @@
 ## 专题研究
 
 <details>
-<summary><b>综合与横评</b> · 99 份 · 最近 2026-10-06</summary>
+<summary><b>综合与横评</b> · 101 份 · 最近 2026-11-08</summary>
 
+- `2026-11-08` [Cloudflare (NET)、Vistra (VST)、Veeva (VEEV) 最新财报精读、基本面横评与"民主党上台 AI 放缓"多情景估值报告](NET-VST-VEEV-财报精读与AI放缓情景估值-20261108.md) — 财报
+- `2026-11-06` [Vistra Corp.（VST）2026Q3 财报精读与多情景估值报告](Vistra-earnings-2026Q3.md) — 财报
 - `2026-10-06` [Cerebras Systems（CBRS）研究报告](Cerebras研究报告-20261006.md) — 研究
 - `2026-10-06` [AI算力四选一：AKAM / AMT / ORCL / QCOM 深度对比与建仓建议](AI算力四选一-AKAM-AMT-ORCL-QCOM-20261006.md) — 研究
 - `2026-09-24` [巴菲特价值投资买入前 Checklist：BWXT / AVGO / QCOM / ORCL](多公司对比-checklist-20260924.md) — 底稿

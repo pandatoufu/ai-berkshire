@@ -1,6 +1,39 @@
 {
-  "count": 2439,
+  "count": 2443,
   "reports": [
+    {
+      "title": "Cloudflare (NET)、Vistra (VST)、Veeva (VEEV) 最新财报精读、基本面横评与\"民主党上台 AI 放缓\"多情景估值报告",
+      "path": "reports/NET-VST-VEEV-财报精读与AI放缓情景估值-20261108.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "财报",
+      "date": "2026-11-08",
+      "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "Vistra Corp.（VST）2026Q3 财报精读与多情景估值报告",
+      "path": "reports/Vistra-earnings-2026Q3.md",
+      "bucket": "专题",
+      "group": "综合与横评",
+      "series": "",
+      "type": "财报",
+      "date": "2026-11-06",
+      "date_source": "正文",
+      "ticker": ""
+    },
+    {
+      "title": "Cloudflare（NET）2026Q3 财报精读与多情景估值报告",
+      "path": "reports/Cloudflare/Cloudflare-earnings-2026Q3.md",
+      "bucket": "公司",
+      "group": "Cloudflare",
+      "series": "",
+      "type": "财报",
+      "date": "2026-11-05",
+      "date_source": "正文",
+      "ticker": ""
+    },
     {
       "title": "多少钱值得买，什么信号必须卖",
       "path": "reports/高通/《看懂高通》-20261012/05-多少钱值得买，什么信号必须卖.md",
@@ -2793,6 +2826,17 @@
       "type": "公众号",
       "date": "2026-08-01",
       "date_source": "文件名",
+      "ticker": ""
+    },
+    {
+      "title": "Veeva Systems（VEEV）2026Q2 财报与 11月投资者日（8-K）精读及多情景估值报告",
+      "path": "reports/Veeva/Veeva-earnings-2026Q2-InvestorDay.md",
+      "bucket": "公司",
+      "group": "Veeva",
+      "series": "",
+      "type": "财报",
+      "date": "2026-07-31",
+      "date_source": "正文",
       "ticker": ""
     },
     {

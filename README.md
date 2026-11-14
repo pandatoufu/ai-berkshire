@@ -16,7 +16,7 @@
 
 <!-- REPORTS-BANNER:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2439 份报告 · 118 家公司 · 23 个专题，按公司与专题分组，更新至 2026-10-12。
+> 📊 **日更内容是研究报告，全部在 [研究报告索引](reports/README.md)。** 2443 份报告 · 118 家公司 · 23 个专题，按公司与专题分组，更新至 2026-11-08。
 
 <!-- REPORTS-BANNER:END -->
 
@@ -732,16 +732,17 @@ Antigravity 还会自动调用 `invoke_subagent` 调遣 `research` 子智能体�
 
 <!-- REPORTS-INDEX:START 由 tools/reports_index.py 自动更新，勿手改 -->
 
-**📊 [全部研究索引 →](reports/README.md)** ｜ 2439 份报告 · 118 家公司 · 23 个专题 · 更新至 2026-10-12
+**📊 [全部研究索引 →](reports/README.md)** ｜ 2443 份报告 · 118 家公司 · 23 个专题 · 更新至 2026-11-08
 
 最近更新：
 
 | 日期 | 报告 | 归属 |
 |------|------|------|
+| 2026-11-08 | [Cloudflare (NET)、Vistra (VST)、Veeva (VEEV) 最新财报精读、基本面横评与"民主党上台 AI 放缓"多情景估值报告](reports/NET-VST-VEEV-财报精读与AI放缓情景估值-20261108.md) | 综合与横评 |
+| 2026-11-06 | [Vistra Corp.（VST）2026Q3 财报精读与多情景估值报告](reports/Vistra-earnings-2026Q3.md) | 综合与横评 |
+| 2026-11-05 | [Cloudflare（NET）2026Q3 财报精读与多情景估值报告](reports/Cloudflare/Cloudflare-earnings-2026Q3.md) | Cloudflare |
 | 2026-10-12 | [多少钱值得买，什么信号必须卖](reports/高通/《看懂高通》-20261012/05-多少钱值得买，什么信号必须卖.md) | 高通 |
 | 2026-10-12 | [用巴菲特方式拆高通的财报与管理层](reports/高通/《看懂高通》-20261012/04-用巴菲特方式拆高通的财报与管理层.md) | 高通 |
-| 2026-10-06 | [Cerebras Systems（CBRS）研究报告](reports/Cerebras研究报告-20261006.md) | 综合与横评 |
-| 2026-10-06 | [AKAM（Akamai 阿卡迈）近三年财报会议复盘：管理层"言出必行"吗？](reports/AKAM/AKAM-management-earnings-track-record-20261006.md) | AKAM |
 
 <!-- REPORTS-INDEX:END -->
 
